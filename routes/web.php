@@ -5,7 +5,7 @@ use App\Http\controllers\OrdersController;
 use App\Http\controllers\ProductsController;
 use App\Http\controllers\CustomersController;
 use App\Http\controllers\frontend\HomeController;
-
+use App\Http\controllers\backend\CategoryController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,3 +38,5 @@ Route::post('admin/products/store',[ProductsController::class,'store'])->name('a
 Route::get('admin/customers',[CustomersController::class,'customerlist'])->name('admin.customer');
 Route::get('admin/customers/add',[CustomersController::class,'customeradd'])->name('admin.customer.add');
 Route::post('admin/customers/store',[CustomersController::class,'store'])->name('admin.customer.store');
+// category route
+Route::get('admin/category', [CustomersController::class, 'categoryview'])

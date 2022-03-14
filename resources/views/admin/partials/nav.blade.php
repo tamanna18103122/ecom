@@ -8,6 +8,12 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{route('category.view')}}">
+              <span data-feather="file"></span>
+              Category
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{route('admin.order')}}">
               <span data-feather="file"></span>
               Orders
